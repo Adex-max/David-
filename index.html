@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox and Material Webpage</title>
+  <!-- Material Design Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet" />
+  <style>
+    /* Styles for About Page */
+    .about-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px;
+      background-color: #f8f9fa;
+    }.about-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: center;
+}
+
+  </style>
+</head><body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">ADEX Site</a>
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>  <!-- Home Page (Material Design) -->  <section id="home" class="text-center p-5 bg-primary text-white">
+    <div class="container">
+      <h1 class="mb-4">Welcome to ADEX Site</h1>
+      <p class="lead">Built with Material Design Bootstrap</p>
+      <a class="btn btn-light btn-lg" href="#about">Learn More</a>
+    </div>
+  </section>  <!-- About Page (Flexbox) -->  <section id="about" class="about-container">
+    <div class="about-box">
+      <h2>About Us</h2>
+      <p>We are a modern web design company using the latest in UI/UX tools.</p>
+    </div>
+    <div class="about-box">
+      <h2>Our Mission
